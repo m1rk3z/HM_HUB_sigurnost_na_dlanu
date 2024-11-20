@@ -9,3 +9,11 @@ html {
 body {
     --color-01: #6C698D;
 }
+
+
+/* ******* BACKGROUNDS ******* */
+.background-wrapper {
+    position: absolute;
+    margin: 0;
+}
+
