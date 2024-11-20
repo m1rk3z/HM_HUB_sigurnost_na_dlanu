@@ -5,3 +5,7 @@
 html {
     font-size: 12px;
 }
+
+body {
+    --color-01: #6C698D;
+}

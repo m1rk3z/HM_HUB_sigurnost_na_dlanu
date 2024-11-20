@@ -1,3 +1,21 @@
+
+
+{
+    "name": "My Server",
+    "host": "localhost",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "username",
+    "remotePath": "/",
+    "uploadOnSave": false,
+    "useTempFile": false,
+    "openSsh": false
+}
+
+****************************
+
+
+
 background_blue.svg,
 background_yellow.svg,
     1990.79x384 (sva tri)
