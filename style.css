@@ -1,19 +1,235 @@
 * {
+    outline: 1px solid red;
+
     box-sizing: border-box;
 }
 
 html {
-    font-size: 12px;
+    font-size: 16px;
+
+    --color-01: #C0E8F9;
+    --color-02: #FFE548;
+    --color-03: #FF9B71;
+    --color-04: #6C698D;
+    --color-05: #14424C;
 }
 
 body {
-    --color-01: #6C698D;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
+.content-wrapper {
+
+
+    position: relative;
+    width: clamp(320px, 100vw, 1440px);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h4 {
+    font-family: Sarpanch, sans-serif;
+    color: var(--color-05);
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: Jost, sans-serif;
+}
+
+.bubble-wrapper {
+    font-size: 2rem;
+    text-decoration: underline;
+}
 
 /* ******* BACKGROUNDS ******* */
 .background-wrapper {
     position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.background-wrapper>img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ******* HEADER ******* */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+header h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+/* ******* SECTION-1 ******* */
+.section-1 {
+    position: relative;
+}
+
+/* ******* BOX-1 */
+.section-1 .box-1 {
+    width: min-content;
+}
+
+.section-1 .box-1 .bubble-wrapper {
+    position: relative;
+}
+
+.section-1 .box-1 .bubble-wrapper p {
+    position: absolute;
+    inset: 29% 11% auto auto;
+    text-align: right;
+}
+
+.section-1 .bitcoins {
+    width: 100%;
+    margin: -5% auto 0 auto;
+}
+
+.section-1 .bitcoin-1 {
+    width: 38px;
+    width: 10%;
+    transform: rotate(-12deg);
+    margin: 0 0 0 7%;
+}
+
+.section-1 .bitcoin-2 {
+    width: 60px;
+    width: 16%;
+    transform: rotate(75deg);
+    margin: 0 0 2% 16%;
+}
+
+.section-1 .bitcoin-3 {
+    width: 83px;
+    width: 20%;
+    transform: rotate(0deg);
+    margin: 0 0 7% 13%;
+}
+
+/* ******* BOX-2 */
+.section-1 .box-2 {
+    width: auto;
+}
+
+/* ******* BOX-3 */
+.section-1 .box-3 {
+    width: auto;
+}
+
+.section-1 .box-3 img {
+    /* width: ; */
+}
+
+/* ******* BOX-4 */
+.section-1 .box-4 {
+    width: min-content;
+}
+
+.section-1 .box-4 .bubble-wrapper {
+    position: relative;
+    margin-bottom: 12%;
+}
+
+.section-1 .box-4 .bubble-wrapper p {
+    position: absolute;
+    inset: -5% 16% auto auto;
+}
+
+/* ******* SECTION-2 ******* */
+.section-2 {
+    position: relative;
+    padding-top: 20px;
+}
+
+.section-2 h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section-2 p {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/* ******* BOX-1 */
+.section-2 .box-1 {
+    margin: 0 auto;
+    width: min-content;
+}
+
+.section-2 .box-1 .video-wrapper {
+    position: relative;
+    width: min-content;
+}
+
+.section-2 .box-1 .video-wrapper video {
+    width: 777px;
+    height: 445px;
+}
+
+.section-2 .box-1 .video-wrapper img {
+    position: absolute;
+    width: 10%;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ******* BOX-2 */
+.section-2 .box-2 {
+    position: relative;
+    width: min-content;
+}
+
+.section-2 .box-2 .bubble-wrapper {
+    outline: 3px solid green;
+    position: relative;
+    width: min-content;
+}
+
+.section-2 .box-2 .bubble-wrapper p {
+    font-size: 2rem;
+    position: absolute;
+    inset: 15% 10% auto 10%;
     margin: 0;
 }
 
+.section-2 .box-2 .details {
+    position: relative;
+    
+}
+
+.section-2 .box-2 img {
+    outline: 3px solid blue;
+    margin-bottom: 150px;
+}
+
+.section-2 .box-2 .warning {
+    position: absolute;
+    inset: auto 0 0px 0;
+}
+
+.section-2 .box-2 .spinner {
+    position: absolute;
+    inset: 0 0 0 0;
+}
