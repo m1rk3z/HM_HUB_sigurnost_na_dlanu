@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 
     box-sizing: border-box;
 }
@@ -19,14 +19,6 @@ body {
     overflow-x: hidden;
 }
 
-.content-wrapper {
-
-
-    position: relative;
-    width: clamp(320px, 100vw, 1440px);
-    margin: 0 auto;
-}
-
 h1,
 h2,
 h4 {
@@ -34,93 +26,143 @@ h4 {
     color: var(--color-05);
 }
 
-h2 {
-    font-size: 2.5rem;
-}
-
-p {
-    font-family: Jost, sans-serif;
-}
-
-.bubble-wrapper {
-    font-size: 2rem;
-    text-decoration: underline;
-}
-
-/* ******* BACKGROUNDS ******* */
-.background-wrapper {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-}
-
-.background-wrapper>img {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* ******* HEADER ******* */
-
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-header h1 {
+h1 {
     font-size: 3.5rem;
     font-weight: 800;
     letter-spacing: .12em;
     text-transform: uppercase;
 }
 
-header h4 {
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h4 {
     font-size: 1rem;
     font-weight: 700;
 }
 
+p {
+    font-family: Jost, sans-serif;
+}
+
+.my-img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+/* ******* BACKGROUNDS ******* */
+.bckg-blue-1 {
+    background-image: url(./img/background-blue.png);
+    block-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0 auto;
+}
+
+.bckg-blue-2 {
+    background-image: url(./img/background-blue.png);
+    block-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0 auto;
+}
+
+.bckg-yellow-1 {
+    background-image: url(./img/background-yellow.png);
+    block-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0 auto;
+}
+
+.bckg-yellow-2 {
+    background-image: url(./img/background-yellow.png);
+    block-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0 auto;
+}
+
+/* ******* SECTIONS ******* */
+.content-width {
+    width: clamp(320px, 100vw, 1440px);
+}
+
+.bubble-wrapper {
+    position: relative;
+    container-type: inline-size;
+}
+
+.bubble-wrapper p {
+    position: absolute;
+    text-decoration: underline;
+}
 
 /* ******* SECTION-1 ******* */
-.section-1 {
-    position: relative;
+
+/* ******* HEADER */
+.header-wrapper>* {
+    display: inline-block;
 }
+
+.header-wrapper .text-wrapper {
+    margin-left: 30px;
+}
+
+.header-wrapper .text-wrapper>* {
+    text-align: left;
+}
+
+/* .header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+} */
+
+/* ******* SUBSECTION-1 */
 
 /* ******* BOX-1 */
-.section-1 .box-1 {
-    width: min-content;
+.subsection-1 .box-1 {
+    width: 83.36%;
+    margin: 11% 3.4% auto auto;
 }
 
-.section-1 .box-1 .bubble-wrapper {
-    position: relative;
-}
-
-.section-1 .box-1 .bubble-wrapper p {
-    position: absolute;
-    inset: 29% 11% auto auto;
+.subsection-1 .box-1 .bubble-wrapper p {
+    inset: 41% 11% auto auto;
     text-align: right;
+    font-size: 5.5cqw;
+    line-height: 7.5cqw;
 }
 
-.section-1 .bitcoins {
+.subsection-1 .bitcoins {
     width: 100%;
     margin: -5% auto 0 auto;
+    padding-right: 11%;
 }
 
-.section-1 .bitcoin-1 {
+.subsection-1 .bitcoins img {
+    vertical-align: unset;
+}
+
+.subsection-1 .bitcoin-1 {
     width: 38px;
     width: 10%;
     transform: rotate(-12deg);
     margin: 0 0 0 7%;
 }
 
-.section-1 .bitcoin-2 {
+.subsection-1 .bitcoin-2 {
     width: 60px;
     width: 16%;
     transform: rotate(75deg);
     margin: 0 0 2% 16%;
 }
 
-.section-1 .bitcoin-3 {
+.subsection-1 .bitcoin-3 {
     width: 83px;
     width: 20%;
     transform: rotate(0deg);
@@ -128,39 +170,44 @@ header h4 {
 }
 
 /* ******* BOX-2 */
-.section-1 .box-2 {
-    width: auto;
+.subsection-1 .box-2 {
+    width: 77.16%;
+    margin: 0% auto auto 4.5%;
 }
 
 /* ******* BOX-3 */
-.section-1 .box-3 {
-    width: auto;
+.subsection-1 .box-3 {
+    width: 86.831%;
+    margin: 0 0 0 auto;
 }
 
-.section-1 .box-3 img {
+.subsection-1 .box-3 img {
     /* width: ; */
 }
 
 /* ******* BOX-4 */
-.section-1 .box-4 {
-    width: min-content;
+.subsection-1 .box-4 {
+    width: 72.215%;
+    margin: 19% auto auto 7.5%;
 }
 
-.section-1 .box-4 .bubble-wrapper {
-    position: relative;
+.subsection-1 .box-4 .bubble-wrapper {
+    width: 95.192%;
     margin-bottom: 12%;
 }
 
-.section-1 .box-4 .bubble-wrapper p {
-    position: absolute;
-    inset: -5% 16% auto auto;
+.subsection-1 .box-4 .bubble-wrapper p {
+    inset: 12% 16% auto auto;
+    text-align: left;
+    font-size: 6.51cqw;
+    line-height: 8.75cqw;
 }
 
 /* ******* SECTION-2 ******* */
-.section-2 {
+/* .section-2 {
     position: relative;
-    padding-top: 20px;
-}
+    margin-top: 70px;
+} */
 
 .section-2 h2 {
     text-align: center;
@@ -173,63 +220,84 @@ header h4 {
 }
 
 /* ******* BOX-1 */
-.section-2 .box-1 {
+
+
+/* ******* BOX-2 */
+.section-2 .box-2 {
     margin: 0 auto;
-    width: min-content;
+    width: 777px;
 }
 
-.section-2 .box-1 .video-wrapper {
-    position: relative;
-    width: min-content;
-}
-
-.section-2 .box-1 .video-wrapper video {
+.section-2 .box-2 .video-wrapper video {
     width: 777px;
     height: 445px;
 }
 
-.section-2 .box-1 .video-wrapper img {
+.section-2 .box-2 .video-wrapper img {
     position: absolute;
     width: 10%;
     inset: 50% auto auto 50%;
     transform: translate(-50%, -50%);
 }
 
-/* ******* BOX-2 */
-.section-2 .box-2 {
-    position: relative;
-    width: min-content;
+/* ******* BOX-3 */
+.section-2 .box-3 {
+    width: 80%; 
 }
 
-.section-2 .box-2 .bubble-wrapper {
-    outline: 3px solid green;
-    position: relative;
-    width: min-content;
+.section-2 .box-3 .bubble-wrapper {
+    width: 80%;
 }
 
-.section-2 .box-2 .bubble-wrapper p {
+.section-2 .box-3 .bubble-wrapper p {
     font-size: 2rem;
     position: absolute;
     inset: 15% 10% auto 10%;
     margin: 0;
 }
 
-.section-2 .box-2 .details {
+.section-2 .box-3 .details {
     position: relative;
-    
+
 }
 
-.section-2 .box-2 img {
-    outline: 3px solid blue;
+.section-2 .box-3 img {
     margin-bottom: 150px;
 }
 
-.section-2 .box-2 .warning {
+.section-2 .box-3 .warning {
     position: absolute;
     inset: auto 0 0px 0;
 }
 
-.section-2 .box-2 .spinner {
+.section-2 .box-3 .spinner {
     position: absolute;
     inset: 0 0 0 0;
 }
+
+/* ******* BOX-4 */
+.section-2 .box-4 {
+    width: 86.831%;
+    margin: 0 0 0 auto;
+}
+
+/* ******* HELPER classes - delete ******* */
+.section-2 .container-fluid {
+    border: 5px dotted red;
+}
+
+.section-2 .row {
+    outline: 3px solid green;
+    ;
+}
+
+.section-2 [class*="col-"] {
+    outline: 3px solid blue;
+}
+
+.section-2 [class*="box"], 
+.section-2 .box-4>* {
+    outline: 2px dotted gray;
+}
+
+/* ************************************** */
