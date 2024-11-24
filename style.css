@@ -27,7 +27,8 @@ h4 {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: max(3rem, 3.9548cqw);
+    line-height: 1;
     font-weight: 800;
     letter-spacing: .12em;
     text-transform: uppercase;
@@ -35,12 +36,13 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
+    font-size: max(2rem, 2.82486cqw);
     font-weight: 700;
     text-transform: uppercase;
 }
 
 h4 {
-    font-size: 1rem;
+    font-size: max(.875rem, 1.12994cqw);
     font-weight: 700;
 }
 
@@ -59,7 +61,7 @@ p {
     block-size: 100%;
     background-repeat: no-repeat;
     background-position: top center;
-    margin: 0 auto;
+
 }
 
 .bckg-blue-2 {
@@ -86,9 +88,26 @@ p {
     margin: 0 auto;
 }
 
+/* ******* VIDEO ******* */
+.video-wrapper {
+    position: relative;
+}
+
+.play-button {
+    position: absolute;
+    width: 10.298%;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-button[class*="vh"] {
+    width: 20%;
+}
+
 /* ******* SECTIONS ******* */
 .content-width {
     width: clamp(320px, 100vw, 1440px);
+    container: content-width-anchor / inline-size;
 }
 
 .bubble-wrapper {
@@ -102,14 +121,33 @@ p {
 }
 
 /* ******* SECTION-1 ******* */
+.section-1 {
+    margin: 0 auto 50px auto;
+}
+
+.section-1 .row.header {
+    align-items: center;
+}
+
+.section-1 .img-wrapper {
+    width: min(231px, 68.75%);
+    display: inline-block;
+}
 
 /* ******* HEADER */
-.header-wrapper>* {
+.box-0 {
+    width: 100%;
+    container-type: inline-size;
+}
+
+.box-0 >* {
     display: inline-block;
 }
 
 .header-wrapper .text-wrapper {
+    /* text-align: center;
     margin-left: 30px;
+    margin-left: 30px; */
 }
 
 .header-wrapper .text-wrapper>* {
@@ -134,39 +172,8 @@ p {
 .subsection-1 .box-1 .bubble-wrapper p {
     inset: 41% 11% auto auto;
     text-align: right;
-    font-size: 5.5cqw;
+    font-size: 5.5156cqw;
     line-height: 7.5cqw;
-}
-
-.subsection-1 .bitcoins {
-    width: 100%;
-    margin: -5% auto 0 auto;
-    padding-right: 11%;
-}
-
-.subsection-1 .bitcoins img {
-    vertical-align: unset;
-}
-
-.subsection-1 .bitcoin-1 {
-    width: 38px;
-    width: 10%;
-    transform: rotate(-12deg);
-    margin: 0 0 0 7%;
-}
-
-.subsection-1 .bitcoin-2 {
-    width: 60px;
-    width: 16%;
-    transform: rotate(75deg);
-    margin: 0 0 2% 16%;
-}
-
-.subsection-1 .bitcoin-3 {
-    width: 83px;
-    width: 20%;
-    transform: rotate(0deg);
-    margin: 0 0 7% 13%;
 }
 
 /* ******* BOX-2 */
@@ -179,10 +186,6 @@ p {
 .subsection-1 .box-3 {
     width: 86.831%;
     margin: 0 0 0 auto;
-}
-
-.subsection-1 .box-3 img {
-    /* width: ; */
 }
 
 /* ******* BOX-4 */
@@ -199,19 +202,26 @@ p {
 .subsection-1 .box-4 .bubble-wrapper p {
     inset: 12% 16% auto auto;
     text-align: left;
-    font-size: 6.51cqw;
+    font-size: 6.68844cqw;
     line-height: 8.75cqw;
 }
 
 /* ******* SECTION-2 ******* */
-/* .section-2 {
+.section-2 {
     position: relative;
-    margin-top: 70px;
-} */
+    margin: auto auto 200px auto;
+}
+
+.section-2 .row:first-child {
+    margin-top: 30px;
+}
+
+.section-2 .row:last-child {
+    margin-top: 100px;
+}
 
 .section-2 h2 {
     text-align: center;
-    margin-top: 50px;
 }
 
 .section-2 p {
@@ -219,84 +229,142 @@ p {
     text-align: center;
 }
 
-/* ******* BOX-1 */
-
+.section-2 .box-1,
+.section-2 .box-2 {
+    width: min(100%, 777px);
+    margin: 0 auto;
+}
 
 /* ******* BOX-2 */
-.section-2 .box-2 {
-    margin: 0 auto;
-    width: 777px;
-}
-
 .section-2 .box-2 .video-wrapper video {
-    width: 777px;
-    height: 445px;
-}
-
-.section-2 .box-2 .video-wrapper img {
-    position: absolute;
-    width: 10%;
-    inset: 50% auto auto 50%;
-    transform: translate(-50%, -50%);
+    max-width: 100%;
 }
 
 /* ******* BOX-3 */
 .section-2 .box-3 {
-    width: 80%; 
+    position: relative;
+    width: 72.11%;
+    margin: 6% 9% auto auto;
+}
+
+.section-2 .box-3>img {
+    margin-bottom: 25%;
 }
 
 .section-2 .box-3 .bubble-wrapper {
-    width: 80%;
+    width: 95.193%;
+    margin-left: 40px;
 }
 
 .section-2 .box-3 .bubble-wrapper p {
-    font-size: 2rem;
+    font-size: 6.69828cqw;
     position: absolute;
-    inset: 15% 10% auto 10%;
+    inset: 11% 13% auto 10%;
     margin: 0;
-}
-
-.section-2 .box-3 .details {
-    position: relative;
-
-}
-
-.section-2 .box-3 img {
-    margin-bottom: 150px;
-}
-
-.section-2 .box-3 .warning {
-    position: absolute;
-    inset: auto 0 0px 0;
-}
-
-.section-2 .box-3 .spinner {
-    position: absolute;
-    inset: 0 0 0 0;
 }
 
 /* ******* BOX-4 */
 .section-2 .box-4 {
+    position: relative;
     width: 86.831%;
-    margin: 0 0 0 auto;
+    margin: auto auto auto 0%;
+}
+
+/* ******* SECTION-3 ******* */
+
+
+/* ******* BOX-1 */
+.section-3 .box-1 {
+    position: relative;
+    width: max-content;
+}
+
+/* ******* BOX-2 */
+
+
+/* ******* BOX-3 */
+
+
+/* ******* ANIMATED DETAILS ******* */
+.details {
+    position: absolute;
+}
+
+.section-1 .details.bitcoins {
+    position: relative;
+    width: 100%;
+    margin: -5% auto 0 auto;
+    padding-right: 11%;
+}
+
+.section-1 .details.bitcoins img {
+    vertical-align: unset;
+}
+
+.section-1 .details .bitcoin-1 {
+    /* width: 38px; */
+    width: 10%;
+    transform: rotate(-12deg);
+    margin: 0 0 0 7%;
+}
+
+.section-1 .details .bitcoin-2 {
+    /* width: 60px; */
+    width: 16%;
+    transform: rotate(75deg);
+    margin: 0 0 2% 16%;
+}
+
+.section-1 .details .bitcoin-3 {
+    /* width: 83px; */
+    width: 20%;
+    transform: rotate(0deg);
+    margin: 0 0 7% 13%;
+}
+
+/* * */
+
+.section-2 .box-3 .details.warning {
+    /* width: 80px; */
+    width: 15.942%;
+    inset: auto auto -14% 22%;
+}
+
+.section-2 .box-3 .details.spinner {
+    /* width: 80px; */
+    width: 15.942%;
+    inset: auto 6% -30% auto;
+}
+
+.section-2 .box-4 .details.close {
+    /* width: 60px; */
+    width: 9.93%;
+    inset: -24% 9% auto auto;
+}
+
+.section-3 .box-1 .details.download {
+    /* width: 56px; */
+    width: 9.012%;
+    inset: -24% 9% auto auto;
+
 }
 
 /* ******* HELPER classes - delete ******* */
-.section-2 .container-fluid {
+.section-3 .container-fluid {
     border: 5px dotted red;
 }
 
-.section-2 .row {
+.section-3 .row {
     outline: 3px solid green;
     ;
 }
 
-.section-2 [class*="col-"] {
+.section-3 [class*="col-"] {
     outline: 3px solid blue;
 }
 
-.section-2 [class*="box"], 
-.section-2 .box-4>* {
+.section-3 [class*="box"],
+.section-3 .box-3>* {
     outline: 2px dotted gray;
 }
 
