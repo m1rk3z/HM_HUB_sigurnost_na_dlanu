@@ -1,7 +1,9 @@
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html {
@@ -16,7 +18,7 @@ html {
 
 body {
     margin: 0 auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 h1,
@@ -37,7 +39,8 @@ h1 {
 h2 {
     font-size: 2.5rem;
     font-size: max(2rem, 2.82486cqw);
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: .12em;
     text-transform: uppercase;
 }
 
@@ -53,6 +56,10 @@ p {
 .my-img-fluid {
     width: 100%;
     height: auto;
+}
+
+.row {
+    margin-inline: 0px;
 }
 
 /* ******* BACKGROUNDS ******* */
@@ -106,7 +113,9 @@ p {
 
 /* ******* SECTIONS ******* */
 .content-width {
-    width: clamp(320px, 100vw, 1440px);
+    outline: 3px dotted blue;
+    width: clamp(320px, 100%, 1440px);
+    padding: 0;
     container: content-width-anchor / inline-size;
 }
 
@@ -172,7 +181,7 @@ p {
 .subsection-1 .box-1 .bubble-wrapper p {
     inset: 41% 11% auto auto;
     text-align: right;
-    font-size: 5.5156cqw;
+    font-size: min(5.5156cqw, 32px);
     line-height: 7.5cqw;
 }
 
@@ -202,7 +211,7 @@ p {
 .subsection-1 .box-4 .bubble-wrapper p {
     inset: 12% 16% auto auto;
     text-align: left;
-    font-size: 6.68844cqw;
+    font-size: min(6.68844cqw, 32px);
     line-height: 8.75cqw;
 }
 
@@ -213,11 +222,11 @@ p {
 }
 
 .section-2 .row:first-child {
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .section-2 .row:last-child {
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .section-2 h2 {
@@ -225,7 +234,7 @@ p {
 }
 
 .section-2 p {
-    font-size: 1.25rem;
+    font-size: max(1rem, 1.41243cqw);
     text-align: center;
 }
 
@@ -257,7 +266,7 @@ p {
 }
 
 .section-2 .box-3 .bubble-wrapper p {
-    font-size: 6.69828cqw;
+    font-size: min(6.69828cqw, 32px);
     position: absolute;
     inset: 11% 13% auto 10%;
     margin: 0;
@@ -274,15 +283,66 @@ p {
 
 
 /* ******* BOX-1 */
-.section-3 .box-1 {
-    position: relative;
-    width: max-content;
+
+
+.section-3 .text-wrapper h2 {
+    text-transform: none;
+}
+
+.section-3 .details.download {
+    width: 10%;
 }
 
 /* ******* BOX-2 */
 
 
 /* ******* BOX-3 */
+
+
+
+.section-3 .box-video {
+    /* width: 272px; */
+    width: min(87.2%, 272px);
+}
+
+.section-3 .video-wrapper {
+    width: 100%;
+}
+
+.section-3 .box-text { 
+    width: 100%;
+    container-type: inline-size;
+}
+
+.section-3 .box-text p { 
+    font-size: clamp(16px, 6.41025cqw, 20px);
+}
+
+.section-3 .quiz-wrapper {
+    background-color: var(--color-04);
+    border-radius: 32px;
+}
+
+.section-3 .quiz-wrapper h2 {
+    color: #fff;
+
+}
+
+.section-3 .quiz-wrapper button {
+    inset: auto auto 50px auto;
+    padding: 20px 30px;
+    margin-bottom: 50px;
+    font-family: Sarpanch, sans-serif;
+    font-size: max(2rem, 2.82486cqw);
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--color-05);
+    border-radius: 32px;
+    background-color: var(--color-03);
+
+}
+
 
 
 /* ******* ANIMATED DETAILS ******* */
@@ -342,30 +402,31 @@ p {
     inset: -24% 9% auto auto;
 }
 
-.section-3 .box-1 .details.download {
+.section-3 .details.download {
+    display: inline-block;
+    position: relative;
     /* width: 56px; */
-    width: 9.012%;
-    inset: -24% 9% auto auto;
-
+    width: clamp(44px, 12.373%, 56px);
+    inset: auto;
 }
 
 /* ******* HELPER classes - delete ******* */
 .section-3 .container-fluid {
-    border: 5px dotted red;
+    /* border: 5px dotted red; */
 }
 
 .section-3 .row {
-    outline: 3px solid green;
-    ;
+    /* outline: 3px solid green; */
+    
 }
 
 .section-3 [class*="col-"] {
-    outline: 3px solid blue;
+    /* outline: 3px solid blue; */
 }
 
 .section-3 [class*="box"],
 .section-3 .box-3>* {
-    outline: 2px dotted gray;
+    /* outline: 2px dotted gray; */
 }
 
 /* ************************************** */
