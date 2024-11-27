@@ -22,7 +22,7 @@
 
 
             <div class="my-slide slider-wrapper-1">
-                <div class="slide-1">
+                <div class="slide slide-1">
                     <div class="text-upper">Vrste online prevara i kako se zaštititi</div>
                     <div class="img-wrapper">
                         <img src="./img/infographic_1-1.png" alt="infografika">
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="my-slide slider-wrapper-1">
-                <div class="slide-2">
+                <div class="slide slide-2">
                     <div class="text-upper">Vrste online prevara i kako se zaštititi</div>
                     <div class="img-wrapper">
                         <img src="./img/infographic_1-2.png" alt="infografika">
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="my-slide slider-wrapper-1">
-                <div class="slide-3">
+                <div class="slide slide-3">
                     <div class="text-upper">Vrste online prevara i kako se zaštititi</div>
                     <div class="img-wrapper">
                         <img src="./img/infographic_1-3.png" alt="infografika">
@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="my-slide slider-wrapper-1">
-                <div class="slide-4">
+                <div class="slide slide-4">
                     <div class="text-upper">Vrste online prevara i kako se zaštititi</div>
                     <div class="img-wrapper">
                         <img src="./img/infographic_1-4.png" alt="infografika">
@@ -81,10 +81,10 @@
                 </div>
             </div>
         </div>
-        <div class="slider-controls articles-controls">
+        <!-- <div class="slider-controls articles-controls">
             <div class="control prev">&lsaquo;</div>
             <div class="control next">&rsaquo;</div>
-        </div>
+        </div> -->
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.3/dist/tiny-slider.js"></script>
@@ -102,17 +102,16 @@
         // });
 
         var slider = tns({
-            // "autoWidth" : true,
-            "loop" : false,
+            "loop" : true,
             "mouseDrag" : true,
-            "container" : "#autoWidth-non-loop",
+            "container" : ".my-slider",
             "swipeAngle": false,
             "speed": 400,
             "items" : 1,
             "slideBy" : '1',
             "autoplay" : false,
-            "controls" : true,
-            "controlsPosition" : "bottom",
+            "controls" : false,
+            // "controlsPosition" : "bottom",
             "nav" : true,
             "gutter" : 0,
             // "autoHeight" : true,
@@ -124,9 +123,7 @@
             // autoplay: false,
             // autoplayTimeout: 5000,
             // autoplayButtonOutput: false,
-            controlsPosition: 'bottom',
-            controlsContainer: '.slider-controls',
-            nav: true
+            // "controlsContainer" : '.slider-controls',
         });
     </script>
 
