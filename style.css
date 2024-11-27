@@ -389,9 +389,10 @@ p {
     inset: auto 8% -13% auto;
 }
 
-.section-2 .box-4 .details.close {
+.section-2 .details.close {
+    display: inline-block;
     /* width: 60px; */
-    width: 9.93%;
+    width: 4.5cqw;
     inset: -24% 9% auto auto;
 }
 

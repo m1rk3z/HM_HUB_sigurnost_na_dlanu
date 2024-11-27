@@ -1,0 +1,36 @@
+
+.subsection-1 .box-1 .bubble-wrapper,
+.section-2 .box-3 .bubble-wrapper {
+    transform-origin: 100% 100%;
+    transform: scale(0);
+}
+
+.subsection-1 .box-4 .bubble-wrapper {
+    transform-origin: 0% 100%;
+    transform: scale(0);
+}
+
+.subsection-1 .box-1 .bubble-wrapper.show,
+.subsection-1 .box-4 .bubble-wrapper.show,
+.section-2 .box-3 .bubble-wrapper.show {
+    animation: jello-scale 0.8s both;
+}
+
+
+
+/**
+ * ----------------------------------------
+ * animation jello-scale
+ * ----------------------------------------
+ */
+
+  @keyframes jello-scale {
+    0% { transform: scale(0); }
+    30% { transform: scale(1.1 ); }
+    52% { transform: scale(0.95); }
+    73% { transform: scale(1.05); }
+    /* 75% { transform: scale(0.98); } */
+    100% { transform: scale(1); }
+  }
+  
+  
