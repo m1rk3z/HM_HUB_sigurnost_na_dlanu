@@ -110,7 +110,7 @@ p {
 
 /* ******* SECTIONS ******* */
 .content-width {
-    outline: 3px dotted blue;
+    /* outline: 3px dotted blue; */
     width: clamp(320px, 100%, 1440px);
     padding: 0;
     container: content-width-anchor / inline-size;
@@ -190,7 +190,7 @@ p {
 
 /* ******* BOX-3 */
 .subsection-1 .box-3 {
-    width: 86.831%;
+    /* width: 86.831%; */
     margin: 0 0 0 auto;
 }
 
