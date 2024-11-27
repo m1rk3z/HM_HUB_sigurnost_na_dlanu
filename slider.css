@@ -84,11 +84,6 @@ body {
 
 /* slides in general */
 
-/* helper class delete: */
-[class*="article-wrapper-"] {
-    /* margin-inline: 25%; */
-}
-
 .article {
     container-type: inline-size;
     margin: 30px auto;
@@ -101,9 +96,9 @@ body {
     /* height: 800px; */
     max-width: 600px;
     aspect-ratio: 3 /4;
-    border-radius: min(1.518745cqw, 32px);
-    border-radius: 32px;
-    background-color: var(--color-04);
+    /* border-radius: min(1.518745cqw, 32px); */
+    /* border-radius: 32px; */
+    /* background-color: var(--color-04); */
 }
 
 .article>* {
@@ -124,6 +119,7 @@ body {
     margin-inline: 7cqw;
     margin-inline: 8cqw;
 }
+
 .article-wrapper-2 .article .text-lower {
     margin-block: 5.8% 5.4%;
     margin-block: 3% 3.2%;
@@ -260,7 +256,38 @@ body {
     margin-top: 2%;
 }
 
+/* ********************************************* */
 
+/* Slider wrapper with max size */
+.article-wrapper {
+    overflow: hidden;
+    max-width: 600px;
+    max-height: 800px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 32px;
+    background-color: #6C698D;
+}
+
+/* Slider container */
+/* .my-slider-1,
+.my-slider-2 { */
+.slider1,
+.slider2 {
+    width: 100%;
+    height: 100%;
+}
+
+/* Each slide takes full width and height */
+.slider1 .my-article,
+.slider2 .my-article {
+    /* background-color: #6C698D; */
+    /* background-color: red;  */
+    /* border-radius: 32px; */
+}
+
+/* ********************************************* */
 /* tiny slider */
 
 .tns-outer {
@@ -268,27 +295,27 @@ body {
 }
 
 .tns-nav {
-        position: absolute;
-        bottom: 2%;
-        left: 50%;
-        transform: translateX(-50%);
-        width:max-content;
-        height: auto;
-        z-index: 1;
-        display: flex;
-        justify-content: space-evenly;
-    }
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    height: auto;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
 
-button {
+.tns-nav button {
     margin-inline: 10px;
     width: 20px;
     aspect-ratio: 1;
     border-radius: 50%;
     border: 0 none;
-    background-color: rgb(0 0 0 / 10%);
+    background-color: rgb(255 255 255 / 50%);
 }
 
 
-button.tns-nav-active {
+.tns-nav button.tns-nav-active {
     background-color: rgb(0 0 0 / 25%);
 }
