@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Sarpanch:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.3/dist/tiny-slider.css">
+    <link rel="stylesheet" href="slider-test.css">
+    <link rel="stylesheet" href="style2.css">
+
+
+</head>
+
+<body>
+
+    <div class="slider-wrapper">
+        <div id="autoWidth-non-loop" class="my-slider">
+
+
+            <div class="my-slide slider-wrapper-1">
+                <div class="slide-1">
+                    <div class="text-upper">Vrste online prevara i kako se zaštititi</div>
+                    <div class="img-wrapper">
+                        <img src="./img/infographic_1-1.png" alt="infografika">
+                    </div>
+                    <div class="text-lower">Phishing</div>
+                    <p><strong>Opis:</strong> Lažne poruke i web stranice oponašaju banke, trgovine i dostavne službe
+                        kako
+                        bi prikupile podatke.</br><strong>Kako izgleda:</strong> Prijetnje o blokadi računa ili zahtjevi
+                        za
+                        potvrdu identiteta.</br><strong>Zaštita:</strong> Provjeriti pošiljatelja, izbjegavati sumnjive
+                        linkove, koristiti antivirus i dvofaktorsku autentifikaciju.</p>
+                </div>
+            </div>
+            <div class="my-slide slider-wrapper-1">
+                <div class="slide-2">
+                    <div class="text-upper">Vrste online prevara i kako se zaštititi</div>
+                    <div class="img-wrapper">
+                        <img src="./img/infographic_1-2.png" alt="infografika">
+                    </div>
+                    <div class="text-lower">Vishing</br><span class="subtitle">(Phishing putem poziva)</span></div>
+                    <p><strong>Opis:</strong> Pozivi od lažnih bankara ili službenika traže osobne
+                        podatke.</br><strong>Primjeri:</strong> Lažni pozivi banaka ili porezne službe s hitnim
+                        zahtjevima.</br><strong>Zaštita:</strong> Ne dijeliti podatke telefonom, prekinuti poziv i
+                        provjeriti
+                        službene kontakte.</p>
+                </div>
+            </div>
+            <div class="my-slide slider-wrapper-1">
+                <div class="slide-3">
+                    <div class="text-upper">Vrste online prevara i kako se zaštititi</div>
+                    <div class="img-wrapper">
+                        <img src="./img/infographic_1-3.png" alt="infografika">
+                    </div>
+                    <div class="text-lower">Courier Fraud</br><span class="subtitle">(Prijevara s dostavljačem)</span>
+                    </div>
+                    <p><strong>Opis:</strong> Lažni službenici traže da se novac ili dokumenti predaju
+                        "kuriru."</br><strong>Kako izgleda:</strong> Navodni "kurir" dolazi po kartice, novac ili druge
+                        dragocjenosti.</br><strong>Zaštita:</strong> Nikad ne predavati vrijedne predmete dostavljačima,
+                        uvijek
+                        provjeriti identitet.</p>
+                </div>
+            </div>
+            <div class="my-slide slider-wrapper-1">
+                <div class="slide-4">
+                    <div class="text-upper">Vrste online prevara i kako se zaštititi</div>
+                    <div class="img-wrapper">
+                        <img src="./img/infographic_1-4.png" alt="infografika">
+                    </div>
+                    <div class="text-lower">Money Mule</br><span class="subtitle">(Mula za novac)</span></div>
+                    <p><strong>Opis:</strong> Kriminalci koriste ljude za prijenos ilegalno stečenog
+                        novca.</br><strong>Kako
+                            funkcionira:</strong> Primanje novca na svoj račun i prosljeđivanje uz
+                        proviziju.</br><strong>Zaštita:</strong> Izbjegavati ponude za brzu zaradu koje uključuju
+                        prijenos
+                        novca.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls articles-controls">
+            <div class="control prev">&lsaquo;</div>
+            <div class="control next">&rsaquo;</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.3/dist/tiny-slider.js"></script>
+
+    <script>
+        // Initialize Tiny Slider
+        // var slider = tns({
+        //   container: '.my-slider',
+        //   items: 1,
+        //   slideBy: 'page',
+        //   autoplay: false,
+        //   controls: true,
+        //   nav: true,
+        //   mouseDrag: true,
+        // });
+
+        var slider = tns({
+            // "autoWidth" : true,
+            "loop" : false,
+            "mouseDrag" : true,
+            "container" : "#autoWidth-non-loop",
+            "swipeAngle": false,
+            "speed": 400,
+            "items" : 1,
+            "slideBy" : '1',
+            "autoplay" : false,
+            "controls" : true,
+            "controlsPosition" : "bottom",
+            "nav" : true,
+            "gutter" : 0,
+            // "autoHeight" : true,
+            // responsive: {
+            //     768: {items: 2, gutter: 10},
+            //     992: {items: 3, gutter: 20},
+            //     1200: {items: 4, gutter: 20}
+            // },
+            // autoplay: false,
+            // autoplayTimeout: 5000,
+            // autoplayButtonOutput: false,
+            controlsPosition: 'bottom',
+            controlsContainer: '.slider-controls',
+            nav: true
+        });
+    </script>
+
+
+
+</body>
+
+</html>

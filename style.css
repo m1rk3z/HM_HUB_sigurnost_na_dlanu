@@ -405,6 +405,7 @@ p {
 
 /* SLIDERS */
 
+
 /* fonts */
 [class*="slide-"] {
     font-family: Sarpanch, sans-serif;
@@ -468,6 +469,7 @@ p {
 [class*="slide-"] {
     container-type: inline-size;
     margin: 30px auto;
+    margin: 0 auto;
 
     /* padding: 0.9% 2% 3.4% 2%; */
     /* padding-inline: 32px; */
@@ -496,6 +498,7 @@ p {
 }
 
 .slider-wrapper-1 [class*="slide-"] .text-upper {
+    margin-inline: 7cqw;
     margin-inline: 8cqw;
 }
 .slider-wrapper-2 [class*="slide-"] .text-lower {
