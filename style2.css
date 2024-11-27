@@ -8,7 +8,7 @@ body {
 
 
 /* Slider wrapper with max size */
-.slider-wrapper {
+.article-wrapper {
   max-width: 600px;      
   max-height: 800px;     
   width: 100%;          
@@ -17,18 +17,17 @@ body {
 }
 
 /* Slider container */
-.my-slider {
+/* .my-slider-1,
+.my-slider-2 { */
+.slider1,
+.slider2 {
   width: 100%;
   height: 100%;
 }
 
 /* Each slide takes full width and height */
-.my-slider .my-slide {
-  /* width: 100%; */
-  /* height: 100%; */
-  /* background-color: #ddd;  */
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.slider1 .my-article,
+.slider2 .my-article {
+  background-color: #ddd; 
+  /* border-radius: 32px; */
 }
